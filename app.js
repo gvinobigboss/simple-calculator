@@ -21,7 +21,7 @@ app.post('/calculate', (req, res) => {
             result = num1 * num2;
             break;
         case 'divide':
-            result = num2 !== 0 ? num1 / num2 : 'Error: Division by 0';
+            result = num2 !== 0 ? num1 / num2 : 'Error: Division by zero';
             break;
         default:
             return res.status(400).send('Invalid operation');
